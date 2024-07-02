@@ -19,10 +19,25 @@ own_id = input("ID: ")  # Prompt for your ID
 tele_bot = input("Token: ")  # Prompt for your Telegram Bot Token
 ch = 'qwertyuioplkjhgfdsazxcvbnm1234567890'
 
+def display_ascii_art():
+    ascii_art = """
+    ███████╗░░█████╗░██████╗░███████╗██████╗░████████╗░█████╗░
+    ██╔══██╗██╔══██╗██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██╔══██╗
+    ███████╔╝██║░░██║██████╦╝█████╗░░██████╔╝░░░██║░░░███████║
+    ██╔══██╗██║░░██║██╔══██╗██╔══╝░░██╔══██╗░░░██║░░░██╔══██║
+    ██║░░██║╚█████╔╝██████╦╝███████╗██║░░██║░░░██║░░░██║░░██║
+    ╚═╝░░╚═╝░╚════╝░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝
+    """
+    print(ascii_art)
+    print("Starting the SafeUM account creation process...\n")
+
 def create():
     global counter
     global created
     global failed
+
+    display_ascii_art()
+
     user = str(random.choice([get_first_name().lower(), get_full_name().replace(' ', '').lower(),
                               get_last_name().lower()])) + str(''.join(random.choice('1234567790') for alex in
                                                                      range(int(random.randint(2, 4))))) + str(
