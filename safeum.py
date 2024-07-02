@@ -15,8 +15,8 @@ failed = 0
 
 G = '\033[1;32m'
 R = '\033[1;31m'
-own_id = input("ID: ")  # Prompt for your ID
-tele_bot = input("Token: ")  # Prompt for your Telegram Bot Token
+own_id = input("ايديك: ")  # Prompt for your ID
+tele_bot = input("توكنك: ")  # Prompt for your Telegram Bot Token
 ch = 'qwertyuioplkjhgfdsazxcvbnm1234567890'
 
 def display_ascii_art():
@@ -79,7 +79,7 @@ def create():
         failed += 1
     elif '"status":"Success"' in str(decoded_data):
         created += 1
-        message = f"Account SafeUM\nUser : {user}\nPass : hhhh\n- @F_T_Y ~ @PYYYY ~ @rxx_x"
+        message = f"Account SafeUM\nUser : {user}\nPass : hhhh\n- bev:ROPERTO  ~ @X_RiR_x ~ @rxx_x"
         with open("ppp88.txt", "a") as file:
             file.write(f"{user}\n")
         y = requests.post(f"https://api.telegram.org/bot{tele_bot}/sendmessage?chat_id={own_id}&text={message}")
@@ -97,5 +97,5 @@ while True:
     print(R + 'Failed : ' + str(failed))
     counter += 1
     print('Counter : ' + str(counter))
-    print('Tele : @F_T_Y : Ch : @D8BB8')
-    print('Tele : @PYYYY')
+    print('Tele : bev:ROPERTO  : Ch : https://whatsapp.com/channel/0029VadAOFcL2ATzSf46sI0r')
+    print('Tele : @X_RiR_x')
